@@ -1,9 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { FormData } from "../types/form.type";
-import { INITIAL_FORM_DATA, STEPS } from "../constants/steps";
-import { PersonalInformation } from "./form/steps/PersonalInformation";
 import { Education } from "./form/steps/Education";
 import Skills from "./form/steps/Skills";
 import WorkExperience from "./form/steps/WorkExperience";
@@ -12,6 +9,9 @@ import FormNavigation from "./form/FormNavigation";
 import DecorativeElements from "./layout/DecorativeElements";
 import FormHeader from "./form/FormHeader";
 import ProgressStepper from "./form/ProgressStepper";
+import { INITIAL_FORM_DATA, STEPS } from "@/app/constants/form/form-step.constant";
+import { FormData } from "@/app/types/form.type";
+import { PersonalInformation } from "./form/steps/PersonalInformation";
 
 function MultiStepForm(){
   const [currentStep,setCurrentStep] = useState(1);

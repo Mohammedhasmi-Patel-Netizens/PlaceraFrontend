@@ -1,4 +1,4 @@
-import { FormData, Step } from "../types/form.type";
+import { FormData, Step } from "../../types/form.type";
 
 export const STEPS : Step[] = [
   {id:1, label:"Personal Information"},
